@@ -1,0 +1,225 @@
+
+#about{
+    margin-top: 7rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+
+.about .row .image{
+    flex:1 1 42rem;
+}
+
+.about .row .image img{
+    width: 100%;
+    animation:aboutImage 4s linear infinite;
+}
+
+@keyframes aboutImage {
+    0%, 100%{
+        transform: scale(.9);
+        border-radius: var(--border-radius-hover);
+    }
+    50%{
+        transform: scale(.8);
+        border-radius: var(--border-radius);
+    }
+}
+
+.about .row .content{
+    flex:1 1 42rem;
+}
+
+.about .row .content .title{
+    color:var(--main-color);
+    font-size: 3rem;
+    line-height: 1.8;
+}
+
+.about .row .content p{
+    color:var(--main-color);
+    font-size: 1.5rem;
+    line-height: 1.8;
+    padding:1rem 0;
+}
+
+.about .row .content .icons-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    padding-top: 3rem;
+}
+
+.about .row .content .icons-container .icons{
+    flex:1 1 15rem;
+    padding:1.5rem;
+    text-align: center;
+    border: 1px solid #443;
+    border-radius: 5px;
+}
+
+.about .row .content .icons-container .icons img{
+    height: 5rem;
+}
+
+.about .row .content .icons-container .icons h3{
+    font-size: 1.7rem;
+    padding-top: 1rem;
+    color:var(--main-color);
+}
+
+
+
+/* About More html file css */
+
+.our-story {
+    margin-top: 8.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.our-story-wrap {
+    grid-row-gap: 120px;
+    flex-direction: column;
+    display: flex;
+}
+
+.story-block {
+    justify-content: space-between;
+    align-items: flex-start;
+    display: flex;
+}
+
+.os-title-wrap {
+    width: 100%;
+    max-width: 35%;
+}
+
+
+
+@media (max-width: 768px){
+
+    .our-story-wrap {
+        grid-row-gap: 60px;
+    }
+
+    .story-block {
+        display: flex;
+        flex-direction: column;
+        grid-row-gap: 10px;
+    }
+
+    .os-title-wrap, .os-text {
+        max-width: 100%;
+    }
+
+    .single-text {
+        text-transform: uppercase;
+    }
+
+    .feature-title {
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
+
+
+}
+
+
+
+/* About More html file css ends */
+
+
+
+/* Our team html file css code start */
+
+
+.team {
+    margin-top: 8.5rem;
+    padding-bottom: 5rem;
+}
+
+.title-wrap {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.section-title {
+    margin-bottom: 0;
+}
+
+.team-wrap {
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.team-block{
+    cursor: pointer;
+}
+
+.team-block:hover img{
+    transition: 0.6s ease;
+    scale: 1.1;
+}
+.team-img {
+    width: 100%;
+    background-color: var(--bg);
+    overflow: hidden;
+}
+
+.team-img img{
+    width: 100%;
+}
+
+.team-data {
+    margin-top: -4px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 20px;
+}
+
+.member-name {
+    margin-bottom: 4px;
+}
+
+.single-text.small {
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px){
+
+    .team-wrap {
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+    
+    .team-block{
+        margin-bottom: 3rem;
+    }
+
+    .team-data {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 430px){
+
+    .team-wrap {
+        grid-template-columns: 1fr;
+    }
+    .team-block{
+        margin-bottom: 3rem;
+    }
+}
+
+
+/* Our team html file css code ends */

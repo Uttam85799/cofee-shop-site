@@ -1,0 +1,113 @@
+.menu-v2-wrap {
+    width: 100%;
+    grid-column-gap: 80px;
+    grid-row-gap: 30px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+}
+
+.menu-v2-block {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 30px;
+    display: flex;
+}
+
+.menu-v2-data {
+    grid-row-gap: 5px;
+    flex-direction: column;
+    display: flex;
+}
+
+.menu-price {
+    font-size: 18px;
+    line-height: 150%;
+}
+
+@media (max-width: 768px){
+
+    .menu-v2-wrap {
+        grid-column-gap: 0px;
+        grid-row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .menu-v2-block {
+        padding-bottom: 20px;
+    }
+
+    .menu-v2-data {
+        grid-row-gap: 5px;
+        flex-direction: column;
+        display: flex;
+    }
+
+}
+
+
+
+/* book a table section */
+
+.book-table {
+    background-image: url(../image/book-a-table.jpg);
+    background-position: 50%;
+    background-size: cover;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.bt-form-v1 {
+    width: 100%;
+    max-width: 394px;
+    background-color: white;
+    margin-bottom: 0;
+    margin-left: auto;
+    padding: 40px;
+}
+
+.bt-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.bt-form-wrap {
+    text-align: center;
+}
+
+.bt-field {
+    grid-row-gap: 40px;
+    flex-direction: column;
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.w-input, .w-select {
+    width: 100%;
+    height: 38px;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    display: block;
+}
+
+.input {
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: black black var(--black);
+    background-color: rgba(0, 0, 0, 0);
+    margin-bottom: 0;
+    padding: 0 0 20px;
+}
+
+.bt-two-field {
+    grid-column-gap: 24px;
+    display: flex;
+}
